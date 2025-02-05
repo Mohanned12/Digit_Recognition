@@ -36,12 +36,14 @@ Random Horizontal Flip: Flips images horizontally.
 
 Random Affine Transformations: Applies scaling, translation, and shearing.
 Implemented using torchvision.transforms:
-    transform = transforms.Compose([
-    transforms.RandomRotation(10),
-    transforms.RandomAffine(0, shear=10, scale=(0.8, 1.2)),
-    transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))
-    ])
+    
+    
+        transform = transforms.Compose([
+        transforms.RandomRotation(10),
+        transforms.RandomAffine(0, shear=10, scale=(0.8, 1.2)),
+        transforms.ToTensor(),
+        transforms.Normalize((0.5,), (0.5,))
+        ])
 
 🚀 Training the Model
 
